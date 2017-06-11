@@ -1,0 +1,32 @@
+<!--该demo需要在web服务器环境下运行-->
+<!DOCTYPE html>
+<html lang="zh-cn" class="body-full-height">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title></title>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/ng-dialog/js/ngDialog.min.js"></script>
+    <script src="lib/sweet-alert/sweetalert.min.js"></script>
+    <script src="lib/ng-file-upload/dist/ng-file-upload-shim.js"></script>
+    <script src="lib/ng-file-upload/dist/ng-file-upload.js"></script>
+    <!-- main -->
+    <script src="js/app.js"></script>
+    <script src="js/modules.js"></script>
+</head>
+<body>
+<div ng-app="myApp" style="height:100%;">
+    <!--打开其他页面LOADING加载-->
+    <div class="ngdialog-overlay" id="loading-overlay" style="z-index: -1;"></div>
+    <div ui-view  name='main' style="height:100%"></div>
+</div>
+</body>
+</html>
