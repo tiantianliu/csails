@@ -24,6 +24,12 @@ var tasksArgs = {
         dest: 'www/js/',
         fileName: 'app.js',
     },
+    minifycss: {
+        taskName: 'minifycss',
+        src: ['web/css/main.css'],
+        dest: 'www/css/',
+        fileName: 'main.css'
+    },
     minifyModuleJs: {
         taskName: 'minifyModuleJs',
         src: ['web/modules/**/*.js','web/publish/dev/publishConfig.js','!web/modules/**.js',],
@@ -94,6 +100,16 @@ gulp.task(tasksArgs.minifyModuleJs.taskName, function() {
         .pipe(uglify({outSourceMap: false}))
         .pipe(gulp.dest(tasksArgs.minifyModuleJs.dest))
 });
+
+gulp.task(tasksArgs.minifycss.taskName, function() {
+    return gulp.src(tasksArgs.minifycss.src)      //压缩的文件
+        .pipe(concat(tasksArgs.minifycss.fileName))
+        .pipe(gulp.dest(tasksArgs.minifycss.dest))
+        .pipe(minifyCss())   //执行压缩
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest(tasksArgs.minifycss.dest))
+});
+
 
 gulp.task(tasksArgs.moveNode.taskName, function() {
     return gulp.src(tasksArgs.moveNode.src,{base:"node_modules"})
