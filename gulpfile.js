@@ -32,9 +32,14 @@ var tasksArgs = {
     },
     minifyModuleJs: {
         taskName: 'minifyModuleJs',
-        src: ['web/modules/**/*.js','web/publish/dev/publishConfig.js','!web/modules/**.js',],
+        src: ['web/modules/**/*.js','web/publish/dev/publishConfig.js','web/publish/dev/lib.js','!web/modules/**.js',],
         dest: 'www/js/',
         fileName: 'modules.js',
+    },
+    minifyImages:{
+        taskName: 'minifyImages',
+        src: ['web/images/*.*'],
+        dest: 'www/img/',
     },
     moveNode: {
         taskName: 'moveNode',
@@ -115,6 +120,13 @@ gulp.task(tasksArgs.moveNode.taskName, function() {
     return gulp.src(tasksArgs.moveNode.src,{base:"node_modules"})
         .pipe(gulp.dest(tasksArgs.moveNode.dest))
 });
+
+gulp.task(tasksArgs.minifyImages.taskName, function() {
+    return gulp.src(tasksArgs.minifyImages.src)
+        .pipe(gulp.dest(tasksArgs.minifyImages.dest))
+});
+
+
 gulp.task(tasksArgs.minifyTemplates.taskName, function() {
     return gulp.src(tasksArgs.minifyTemplates.src)
         .pipe(htmlmin({collapseWhitespace: true,removeComments: true}))
