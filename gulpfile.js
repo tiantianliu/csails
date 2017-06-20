@@ -50,7 +50,9 @@ var tasksArgs = {
             'node_modules/angular-resource/**',
             'node_modules/angular-animate/**',
             'node_modules/ng-dialog/**',
-            'node_modules/ng-file-upload/**'
+            'node_modules/ng-file-upload/**',
+            'node_modules/ng-sweet-alert/**',
+            'node_modules/sweetalert/dist/**'
         ],
         dest: 'www/lib/'
     },

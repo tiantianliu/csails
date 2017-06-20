@@ -1,7 +1,7 @@
 /**
  * Created by chao on 2017/6/9.
  */
-var loadModules = ['ngRoute', 'ngResource', 'ngAnimate', 'ui.router', 'ngDialog', 'ngFileUpload',
+var loadModules = ['ngRoute', 'ngResource', 'ngAnimate', 'ui.router', 'ngDialog', 'ngFileUpload','ng-sweet-alert',
     'sails.moduleMain', 'sails.moduleCommon', 'sails.moduleResource', 'sails.moduleUtils'];
 var myApp = angular.module('myApp', loadModules);
 myApp.run(function ($rootScope, $state) {
