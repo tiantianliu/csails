@@ -25,73 +25,12 @@
 </head>
 <body>
 <div ng-app="myApp" style="height:100%;">
-    <div id="header">
-        <!--Navigation list-->
-        <div class="nav-container">
-            <div class="branding">
-                <a href="/">
-                    <img alt="Sails logo" class="logo" ng-src="{{'img/logo_sails.png' | serverImg}}" >
-                    </img>
-                </a>
-                <div class="version" data-current-site-version="{{site-version}}" is="topbar-version-info">
-                    <select>
-                        <option ng-repeat="x in versions">
-                            {{x}}
-                        </option>
-                    </select>
-                </div>
-                <textarea is="offscreen" style="position: absolute; left: -9999px;">
-            </textarea>
-            </div>
-            <ul class="nav right-nav " is="nav-menu">
-                <li class="mobile-only">
-                    <a class="sails-site current" href="/">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a class="sails-site " href="/get-started">
-                        Get started
-                    </a>
-                </li>
-                <li>
-                    <a class="sails-site " href="/support">
-                        Support
-                    </a>
-                </li>
-                <li class="docs-nav no-mobile">
-                    <a class="docs-menu-wrapper">
-                        <select>
-                            <option ng-repeat="x in contents">
-                                {{x}}
-                            </option>
-                        </select>
-                    </a>
-                </li>
-                <li>
-                    <a class="sails-site " href="/studio">
-                        Studio
-                    </a>
-                </li>
-                <li >
-                    <a class="" href="/signup">
-                        注册
-                    </a>
-                </li>
-                <li >
-                    <a class="" href="/signin">
-                        登录
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
     <div id="nav-menu-overlay">
         <div class="veil">
         </div>
     </div>
     <!--打开其他页面LOADING加载-->
-    <div ui-view  name='main' style="height:100%"></div>
+    <div ui-view style="height:100%"></div>
 </div>
 </body>
 </html>

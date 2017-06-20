@@ -6,25 +6,14 @@ moduleMain.config(function ($stateProvider) {
         .state('login', {
             cache: false,
             url: '/login',
-            views:{
-                'main':{
-                    templateUrl: 'templates/login.html',
-                    controller: 'LoginController'
-                }
-
-            }
+            templateUrl: 'templates/login.html',
+            controller: 'LoginController'
         })
         .state('menu', {
             cache: false,
             url: '/menu',
-            views:{
-                'main':{
-                    templateUrl: 'templates/menu.html',
-                    controller: 'MenuController'
-                }
-
-            }
-
+            templateUrl: 'templates/menu.html',
+            controller: 'MenuController'
         })
 
 });

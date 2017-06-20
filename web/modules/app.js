@@ -9,5 +9,5 @@ myApp.run(function ($rootScope, $state) {
 });
 myApp.config(function ($urlRouterProvider, $locationProvider, $httpProvider, $stateProvider) {
     $httpProvider.interceptors.push('ResponseErrorInterceptor');
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/menu');
 });
