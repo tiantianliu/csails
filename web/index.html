@@ -18,6 +18,8 @@
     <script src="lib/ng-file-upload/dist/ng-file-upload-shim.js"></script>
     <script src="lib/ng-file-upload/dist/ng-file-upload.js"></script>
     <script src="lib/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="lib/sweetalert/dist/sweetalert.css"/>
     <script src="lib/ng-sweet-alert/ng-sweet-alert.js"></script>
     <!-- main -->
@@ -27,13 +29,9 @@
 
 </head>
 <body>
-<div ng-app="myApp" style="height:100%;">
-    <div id="nav-menu-overlay">
-        <div class="veil">
-        </div>
-    </div>
+<div ng-app="myApp">
     <!--打开其他页面LOADING加载-->
-    <div ui-view style="height:100%"></div>
+    <div ui-view ></div>
 </div>
 </body>
 </html>
