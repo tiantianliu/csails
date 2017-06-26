@@ -6,41 +6,6 @@
         <link rel="stylesheet" href="D:/Program Files/nodejs/myapp/csails/web/css/main.css"/>
 </head>
 <body>
- <ul class="question_nav ng-scope">
-       <li ng-class="
-       {'active' : $state.includes('menu.questions')}"
-           class="content-header-menu">
-           <span ng-click="changeTab('questions')">最新问答</span>
-       </li>
-       <li ng-class="
-       {'active' : $state.includes('menu.questions.hottest')}"
-         class="content-header-menu">
-         <span ng-click="changeTab('hottest')">热门问答</span>
-       </li>
-       <li ng-class="
-       {'active' : $state.includes('menu.questions.unanswered')}"
-         class="content-header-menu">
-         <span ng-click="changeTab('unanswered')">等待问答</span>
-       </li>
-     <li ng-class="
-       {'active' : $state.includes('user.login')}"
-         class="content-header-menu">
-         <span ng-click="changeTab('newest')">最新动态</span>
-     </li>
- </ul>
-  <div  class="tab-default tab-content">
-      <div ui-view="questions" ng-show="$state.includes('menu.questions')">
 
-      </div>
-      <div ui-view="hottest" ng-show="$state.includes('menu.questions.hottest')">
-
-      </div>
-      <div ui-view="unanswered" ng-show="$state.includes('menu.questions.unanswered')">
-
-      </div>
-      <div ui-view="newest" ng-show="$state.includes('user.login')">
-
-      </div>
-  </div>
 </body>
 </html>
