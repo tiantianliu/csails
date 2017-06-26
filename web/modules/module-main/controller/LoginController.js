@@ -8,11 +8,11 @@ moduleMain.controller('LoginController', function ($scope,$rootScope,$state,Sail
     });
 
     function login(){
-        var userResource = new UserResource($scope.user);
-        userResource.$login(function (userBean) {
-            $state.go('menu');
-        })
-
+        // var userResource = new UserResource($scope.user);
+        // userResource.$login(function (userBean) {
+        //     $state.go('menu');
+        // })
+        $state.go('csails.about');
     }
 
 });

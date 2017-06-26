@@ -9,11 +9,4 @@ moduleMain.config(function ($stateProvider) {
             templateUrl: 'templates/login.html',
             controller: 'LoginController'
         })
-        .state('menu', {
-            cache: false,
-            url: '/menu',
-            templateUrl: 'templates/menu.html',
-            controller: 'MenuController'
-        })
-
 });
