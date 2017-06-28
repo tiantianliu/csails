@@ -1,34 +1,55 @@
-.question_nav
-  li
-    list-style: none
-    margin-left: 0px
-    display: table-cell
-    width: 95px
-    float: left
-    position: relative
-  padding-left: 20px
-  margin-bottom: 0px
-  margin-top: 0px
-  list-style: none
+@charset "utf-8"
 
-.content-header-menu
-  $navcolor: grey
-  span
-    display: block
-    background-color: $navcolor
-    text-decoration: none
-    position: relative
-    padding: 0 10px 0 5px
-    text-align: center
-    margin-right: 20px
-    margin-bottom: 0
-    font-size: 18px
-    font-weight: bold
-    border-radius: 0px
-    height: 40px
-    line-height: 40px
-    color: #FFFFFF
-    cursor: pointer
-.content-header-menu.active
-  span
-    background-color: #f8b9b7 !important
+.article_header
+  position: relative
+  margin: 0 auto
+  a
+    color: $colHighlight
+
+.article_container
+  position: relative
+  background: #fff
+  .article_content
+    padding: 18px 20px 0 90px
+    border-bottom: 1px solid $split-grey
+    @include size(percentage(1),80)
+    .article_answer
+      @include position(absolute,top 15 left 8)
+      @include size(50)
+      background: $colHighlight
+      >span
+        padding-top: 4px
+        text-align: center
+        font-size: 14px
+        color: #fff
+        display: block
+    .article_browse
+      @include position(absolute,top 15 left 80)
+      @include size(50)
+      >span
+        padding-top: 4px
+        text-align: center
+        font-size: 14px
+        color: $secondary-grey
+        display: block
+    .article_person
+      @include position(absolute,top 15 left 150)
+      >span
+        padding-top: 4px
+        text-align: center
+        font-size: 14px
+        color: $secondary-grey
+    .article_title
+      @include position(absolute,top 15 left 150)
+      margin-top: 30px
+      >span
+        text-align: center
+        font-size: 18px
+        font-weight: 500
+        color: $bgDefault
+      >a
+        padding: 3px
+        text-align: center
+        font-size: 10px
+        background-color: $colHighlight
+        color: #fff

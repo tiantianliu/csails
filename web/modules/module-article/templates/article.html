@@ -1,36 +1,199 @@
-<ul class="question_nav ng-scope">
-    <li ng-class="
-       {'active' : $state.includes('menu.questions')}"
-        class="content-header-menu">
-        <span ng-click="changeTab('questions')">最新问答</span>
-    </li>
-    <li ng-class="
-       {'active' : $state.includes('menu.questions.hottest')}"
-        class="content-header-menu">
-        <span ng-click="changeTab('hottest')">热门问答</span>
-    </li>
-    <li ng-class="
-       {'active' : $state.includes('menu.questions.unanswered')}"
-        class="content-header-menu">
-        <span ng-click="changeTab('unanswered')">等待问答</span>
-    </li>
-    <li ng-class="
-       {'active' : $state.includes('user.login')}"
-        class="content-header-menu">
-        <span ng-click="changeTab('newest')">最新动态</span>
-    </li>
-</ul>
-<div  class="tab-default tab-content">
-    <div ui-view="questions" ng-show="$state.includes('menu.questions')">
+<div class="article_header">
+    <ul class="nav nav-tabs">
+        <li role="presentation" ng-class="{'active':'ALL'== articleLabel}" ng-click="changeTag('ALL')"><a>全部</a></li>
+        <li role="presentation" ng-class="{active:'QUESTION' == articleLabel}" ng-click="changeTag('QUESTION')"><a>问答</a></li>
+        <li role="presentation" ng-class="{active: 'SHARE' == articleLabel}" ng-click="changeTag('SHARE')"><a>分享</a></li>
+        <li role="presentation" ng-class="{active:'PERFECT' == articleLabel}" ng-click="changeTag('PERFECT')"><a>精华</a></li>
+    </ul>
+</div>
 
-    </div>
-    <div ui-view="hottest" ng-show="$state.includes('menu.questions.hottest')">
-
-    </div>
-    <div ui-view="unanswered" ng-show="$state.includes('menu.questions.unanswered')">
-
-    </div>
-    <div ui-view="newest" ng-show="$state.includes('user.login')">
-
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
     </div>
 </div>
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
+    </div>
+</div>
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
+    </div>
+</div>
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
+    </div>
+</div>
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
+    </div>
+</div>
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
+    </div>
+</div>
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
+    </div>
+</div>
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
+    </div>
+</div>
+<div class="article_container">
+    <div class="article_content">
+        <div class="article_answer">
+            <span>0</span>
+            <span>回答</span>
+        </div>
+        <div class="article_browse">
+            <span>0</span>
+            <span>浏览</span>
+        </div>
+        <div class="article_person">
+            <span>xxxx</span>
+            <span>ssss</span>
+            <span>前提问</span>
+        </div>
+        <div class="article_title">
+            <span>这是一个测试的题目,我也不知道该说什么好，但他就是一个测试题目</span>
+            <a>全部</a>
+        </div>
+    </div>
+</div>
+

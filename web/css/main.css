@@ -1,3 +1,27 @@
+@charset "UTF-8";
+/* 引入casils通用模块 */
+/* 尺寸 */
+/* px / rem */
+/* 前缀 */
+/* 定位 */
+/* 三角形 */
+/* 单行文本溢出显示省略号） */
+/* 多行文本溢出显示省略号，参数（行数） */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.container {
+  width: 530px; }
+
+.container {
+  width: 750px; }
+
+.container {
+  width: 960px; }
+
 .login {
   position: relative;
   text-align: center; }
@@ -44,37 +68,69 @@
   .navbar-blue .navbar-nav .open .dropdown-menu > .active > a, .navbar-blue .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-blue .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #10acc2;
     background-color: #00201c; } }
-.question_nav {
-  padding-left: 20px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  list-style: none; }
-  .question_nav li {
-    list-style: none;
-    margin-left: 0px;
-    display: table-cell;
-    width: 95px;
-    float: left;
-    position: relative; }
-
-.content-header-menu span {
-  display: block;
-  background-color: grey;
-  text-decoration: none;
+.article_header {
   position: relative;
-  padding: 0 10px 0 5px;
-  text-align: center;
-  margin-right: 20px;
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 0px;
-  height: 40px;
-  line-height: 40px;
-  color: #FFFFFF;
-  cursor: pointer; }
+  margin: 0 auto; }
+  .article_header a {
+    color: #10acc2; }
 
-.content-header-menu.active span {
-  background-color: #f8b9b7 !important; }
+.article_container {
+  position: relative;
+  background: #fff; }
+  .article_container .article_content {
+    padding: 18px 20px 0 90px;
+    border-bottom: 1px solid #E4E4E6;
+    width: 100%;
+    height: 80px; }
+    .article_container .article_content .article_answer {
+      top: 15px;
+      left: 8px;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #10acc2; }
+      .article_container .article_content .article_answer > span {
+        padding-top: 4px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        display: block; }
+    .article_container .article_content .article_browse {
+      top: 15px;
+      left: 80px;
+      position: absolute;
+      width: 50px;
+      height: 50px; }
+      .article_container .article_content .article_browse > span {
+        padding-top: 4px;
+        text-align: center;
+        font-size: 14px;
+        color: #d0d0d0;
+        display: block; }
+    .article_container .article_content .article_person {
+      top: 15px;
+      left: 150px;
+      position: absolute; }
+      .article_container .article_content .article_person > span {
+        padding-top: 4px;
+        text-align: center;
+        font-size: 14px;
+        color: #d0d0d0; }
+    .article_container .article_content .article_title {
+      top: 15px;
+      left: 150px;
+      position: absolute;
+      margin-top: 30px; }
+      .article_container .article_content .article_title > span {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: #00201c; }
+      .article_container .article_content .article_title > a {
+        padding: 3px;
+        text-align: center;
+        font-size: 10px;
+        background-color: #10acc2;
+        color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
